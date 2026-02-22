@@ -1,0 +1,1 @@
+This is a file to explain te purpose of this project
