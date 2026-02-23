@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f0f4f8;
+    font-family: 'Nunito', sans-serif;
+    padding: 20px;
+}
+
+form {
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 16px;
+    width: 100%;
+    max-width: 460px;
+    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.08);
+}
+
+form h2 {
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: #1a1a2e;
+    margin-bottom: 6px;
+}
+
+form > p {
+    font-size: 0.95rem;
+    color: #7a8599;
+    margin-bottom: 28px;
+}
+
+form div {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    font-size: 0.88rem;
+    font-weight: 600;
+    color: #4a5568;
+    margin-bottom: 8px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 11px 14px;
+    border: 1.8px solid #e2e8f0;
+    border-radius: 10px;
+    font-family: 'Nunito', sans-serif;
+    font-size: 0.95rem;
+    color: #1a1a2e;
+    background-color: #fafbfc;
+    outline: none;
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+    border-color: #6c9bff;
+    box-shadow: 0 0 0 3px rgba(108, 155, 255, 0.15);
+    background-color: #fff;
+}
+
+textarea {
+    resize: vertical;
+    min-height: 110px;
+}
+
+.buttons {
+    display: flex;
+    gap: 12px;
+    margin-top: 8px;
+}
+
+button {
+    flex: 1;
+    padding: 12px;
+    border: none;
+    border-radius: 10px;
+    font-family: 'Nunito', sans-serif;
+    font-size: 0.95rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background-color 0.2s, transform 0.1s;
+}
+
+button:first-child {
+    background-color: #4f7ef8;
+    color: #ffffff;
+}
+
+button:first-child:hover {
+    background-color: #3a68e0;
+}
+
+button:last-child {
+    background-color: #f0f4f8;
+    color: #4a5568;
+}
+
+button:last-child:hover {
+    background-color: #e2e8f0;
+}
+
+button:active {
+    transform: scale(0.98);
+}
