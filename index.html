@@ -2,37 +2,37 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>this is a title</title>
+    <title>Consumer Review</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="https://cdn-icons-png.flaticon.com/512/1907/1907675.png">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Pirata+One&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-<div class="title">Consumer review</div>
+<div class="container">
+    <h1>Consumer Review</h1>
+    <p>This form is for submitting product reviews</p>
 
-<div class="description">
-    This form is for submitting product reviews
-</div>
+    <div>
+        <label for="firstName">First Name:</label>
+        <input type="text" id="firstName" name="firstName" required>
+    </div>
 
-<div class="firstName">
-    <label>
-        <input>
-    </label>
-</div>
+    <div>
+        <label for="lastName">Last Name:</label>
+        <input type="text" id="lastName" name="lastName" required>
+    </div>
 
-<div class="lastName">
-    <label>
-        <input>
-    </label>
-</div>
+    <div>
+        <label for="review">Review:</label>
+        <textarea id="review" name="review" rows="5" cols="30" required></textarea>
+    </div>
 
-<div class="review">
-    <label>
-        <input>
-    </label>
-</div>
-
-<div>
-    <button class="submit-button"></button>
-    <button class="clear-button"></button>
+    <div class="buttons">
+        <button type="reset">Clear</button>
+        <button type="submit">Submit</button>
+    </div>
 </div>
 </body>
+</html>

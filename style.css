@@ -1,11 +1,134 @@
-.title {
-    color: red;
-    background-color: yellow;
-    font-size: 20px;
+
+/* Fond plein écran avec flou */
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #0a0a2e;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-.description {
-    color: red;
-    font-size: 20px;
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    position: relative;
+    z-index: 1;
+    background-color: white;
+    border-radius: 20px;
+    padding: 40px 50px;
+    width: 500px;
+    max-width: 90vw;
+    border: 3px solid aqua;
+    box-shadow: 0 0 15px rgba(0, 255, 255, 0.7),
+                0 0 40px rgba(0, 100, 255, 0.5),
+                0 0 80px rgba(100, 0, 255, 0.3);
 }
 
+/* Titre */
+h1 {
+    margin: 0 auto 10px auto;
+    padding: 15px 30px;
+    border-radius: 50px;
+    width: fit-content;
+    border: 3px solid aqua;
+    color: blueviolet;
+    background-color: blanchedalmond;
+    font-size: 28px;
+    font-family: "Pirata One", system-ui;
+    text-align: center;
+    width: fit-content;
+}
+
+/* Paragraphe sous-titre */
+.container > div:first-of-type p {
+    text-align: center;
+    color: #333;
+    margin-bottom: 30px;
+    font-size: 1.1rem;
+}
+
+/* Labels */
+label {
+    font-weight: 600;
+    color: #0a0a2e;
+    display: block;
+    margin-bottom: 6px;
+    font-size: 1rem;
+}
+
+/* Champs texte et textarea */
+input[type="text"],
+textarea {
+    width: 100%;
+    padding: 12px 16px;
+    border: 2px solid #e0e0ff;
+    border-radius: 12px;
+    font-size: 1rem;
+    font-family: inherit;
+    box-sizing: border-box;
+    transition: border-color 0.3s, box-shadow 0.3s;
+    background-color: #f9f9ff;
+}
+
+input[type="text"]:focus,
+textarea:focus {
+    outline: none;
+    border-color: #1a4bbd;
+    box-shadow: 0 0 0 4px rgba(26, 75, 189, 0.2);
+    background-color: #ffffff;
+}
+
+textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+/* Espacement entre les blocs */
+.container > div {
+    margin-bottom: 10px;
+}
+
+/* Conteneur des boutons */
+.buttons {
+    display: flex;
+    gap: 20px;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+/* Style des boutons */
+button {
+    padding: 12px 32px;
+    border: none;
+    border-radius: 50px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s, filter 0.2s;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+button[type="reset"] {
+    background: linear-gradient(135deg, #6b7b8f, #4a5a6e);
+    color: white;
+}
+
+button[type="submit"] {
+    background: linear-gradient(135deg, #1a4bbd, #7d3ac1);
+    color: white;
+}
+
+button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    filter: brightness(1.1);
+}
+
+button:active {
+    transform: translateY(+6px);
+}
