@@ -2,37 +2,21 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>this is a title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consumer Review</title>
     <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-<div class="title">Consumer review</div>
-
-<div class="description">
-    This form is for submitting product reviews
-</div>
-
-<div class="firstName">
-    <label>
-        <input>
-    </label>
-</div>
-
-<div class="lastName">
-    <label>
-        <input>
-    </label>
-</div>
-
-<div class="review">
-    <label>
-        <input>
-    </label>
-</div>
-
-<div>
-    <button class="submit-button"></button>
-    <button class="clear-button"></button>
-</div>
+    <fieldset>
+        <h2>Please tell us about this product</h2> <br>
+        <label for="first-name">First name</label> <br>
+        <input type="text" name="first-name" id="first-name"> <br>
+        <label for="last-name">Last name</label> <br>
+        <input type="text" name="last-name" id="last-name"> <br>
+        <label for="review">Review</label> <br>
+        <textarea name="review" id="review"></textarea> <br>
+        <button type="submit">Submit</button>
+        <button type="clear">Clear</button>
+    </fieldset>
 </body>
+</html>
