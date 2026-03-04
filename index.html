@@ -15,24 +15,27 @@
     <p>This form is for submitting product reviews</p>
 
     <div>
-        <label for="firstName">First Name:</label>
+        <label for="firstName" >First Name:</label>
         <input type="text" id="firstName" name="firstName" required>
     </div>
 
     <div>
-        <label for="lastName">Last Name:</label>
+        <label for="lastName" >Last Name:</label>
         <input type="text" id="lastName" name="lastName" required>
     </div>
 
     <div>
-        <label for="review">Review:</label>
+        <label for="review" >Review:</label>
         <textarea id="review" name="review" rows="5" cols="30" required></textarea>
     </div>
 
     <div class="buttons">
-        <button type="reset">Clear</button>
-        <button type="submit">Submit</button>
+        <button class="reset" onclick="clearFirstName(); clearLastName(); clearReview();">Clear</button>
+        <button class="read" onclick="getFirstName(); getLastName(); getReview();">read</button>
+        <button class="submit" onclick="getData();">Submit</button>
     </div>
 </div>
+
+    <script src="script-1.js"></script>
 </body>
 </html>

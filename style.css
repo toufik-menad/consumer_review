@@ -113,13 +113,18 @@ button {
     box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 }
 
-button[type="reset"] {
+.reset {
     background: linear-gradient(135deg, #6b7b8f, #4a5a6e);
     color: white;
 }
 
-button[type="submit"] {
+.submit {
     background: linear-gradient(135deg, #1a4bbd, #7d3ac1);
+    color: white;
+}
+
+.read {
+    background: linear-gradient(135deg, #28a745, #1a4bbd);
     color: white;
 }
 
