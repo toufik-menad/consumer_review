@@ -7,32 +7,51 @@
 </head>
 
 <body>
-<div class="title">Consumer review</div>
 
-<div class="description">
-    This form is for submitting product reviews
-</div>
+<div class="review-container__section">
+    <div class="review-container">
 
-<div class="firstName">
-    <label>
-        <input>
-    </label>
-</div>
+        <div class="title">Consumer review</div>
 
-<div class="lastName">
-    <label>
-        <input>
-    </label>
-</div>
+        <div class="description">
+            This form is for submitting product reviews
+        </div>
 
-<div class="review">
-    <label>
-        <input>
-    </label>
-</div>
+        <section class="review-container__inputs">
 
-<div>
-    <button class="submit-button"></button>
-    <button class="clear-button"></button>
+            <div class="review-container__inputs--section">
+                <div class="firstName">
+                    <div>FirstName: </div>
+                    <label>
+                        <input class="review-container__inputs--firstname" id="firstName">
+                    </label>
+                </div>
+
+                <div class="lastName">
+                    <div>LastName: </div>
+                    <label>
+                        <input class="review-container__inputs--lastname" id="lastName">
+                    </label>
+                </div>
+
+                <div class="review">
+                    <div>Customer Review</div>
+                    <label>
+                        <textarea class="review__text-area" id="review"></textarea>
+                    </label>
+                </div>
+            </div>
+
+
+
+            <div class="review-container__buttons">
+                <button class="submit-button" onclick="getFirstName(); getLastName(); getTextAraInput()">Read</button>
+                <button class="submit-button" onclick="sendRequest()">Submit</button>
+                <button class="clear-button" onclick="clearData()">Clear</button>
+            </div>
+        </section>
+    </div>
 </div>
+<script src="myFirstScript.js"></script>
+
 </body>

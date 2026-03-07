@@ -1,11 +1,110 @@
+:root {
+    --input-width: 250px;
+    --input-height: 60px;
+    --button-width: 100px;
+    --button-height: 50px;
+    --button-radius: 23px;
+    --font-size-inputs: 20px;
+}
+
+
+
+
+.review-container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: center;
+}
+
 .title {
     color: red;
     background-color: yellow;
     font-size: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
 
 .description {
-    color: red;
-    font-size: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
 
+.review-container__inputs {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: orange;
+    min-width: 400px;
+}
+
+.review-container__section {
+    display: flex;
+    justify-content: center;
+}
+
+.firstName {
+    display: flex;
+    justify-content: space-around;
+}
+
+.lastName {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+}
+
+.review {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.review-container__buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.review-container__inputs--section {
+    display: flex;
+    flex-direction: column;
+    min-height: 200px;
+    justify-content: space-evenly;
+}
+
+.submit-button {
+    width: var(--button-width);
+    height: var(--button-height);
+    background-color: #293FA3;
+    color: white;
+    border-radius: var(--button-radius);
+}
+
+.clear-button {
+    width: var(--button-width);
+    height: var(--button-height);
+    background-color: #293FA3;
+    color: white;
+    border-radius: var(--button-radius);
+}
+
+.review-container__inputs--firstname {
+    width: var(--input-width);
+    border-radius: 7px;
+    font-size: var(--font-size-inputs);
+}
+
+.review-container__inputs--lastname {
+    width: var(--input-width);
+    border-radius: 7px;
+    font-size: var(--font-size-inputs);
+}
+
+.review__text-area {
+    font-size: var(--font-size-inputs);
+}
